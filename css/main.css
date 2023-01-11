@@ -420,7 +420,7 @@ a {
 }
 
 .footer {
-  background-image: url(../../image/footer_background.jpg);
+  background-image: url(../image/footer_background.jpg);
   padding: 5em 0;
   background-size: cover;
   background-position: center;
@@ -547,4 +547,130 @@ a {
 }
 .footer .container .row .footer-col:last-of-type .footer-btn .btn-sub input:hover::placeholder {
   color: #fff;
+}
+
+#toggle1 {
+  cursor: pointer;
+  display: none;
+}
+
+@media only screen and (max-width: 1024px) {
+  body {
+    padding: 0;
+    margin: 0;
+  }
+  .header_1 .container .row {
+    gap: 0px;
+  }
+  .carousel .carousel-footer img {
+    width: 107%;
+  }
+  .member {
+    width: 107%;
+  }
+  .member .container .row .tag {
+    width: 100%;
+  }
+  .contact .container .row {
+    flex-wrap: nowrap;
+  }
+  .contact .container .row .col-xl-7 {
+    width: 65%;
+  }
+  .contact {
+    width: 106%;
+  }
+  footer {
+    width: 106%;
+  }
+  footer .container .row {
+    flex-wrap: nowrap;
+    width: 25%;
+  }
+  .member .container .row .tag .member-card {
+    margin-bottom: 40px;
+  }
+}
+@media only screen and (max-width: 912px) {
+  body {
+    padding: 0;
+    margin: 0;
+  }
+  header .header_1 {
+    width: 102%;
+  }
+  .header_1 .container .row .logo img {
+    width: 75%;
+  }
+  .carousel {
+    width: 109%;
+  }
+  .member {
+    width: 117%;
+  }
+  .contact {
+    width: 119%;
+  }
+  footer {
+    width: 119%;
+  }
+  .member .container .row .tag .member-card {
+    margin-bottom: 40px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .carousel .carousel-footer img {
+    width: 120%;
+  }
+  .member {
+    width: 131%;
+  }
+  .contact {
+    width: 130%;
+  }
+  footer {
+    width: 130%;
+  }
+  .container {
+    margin-top: 15px;
+  }
+  .header_1 .container .row .header-right nav ul {
+    display: flex;
+    flex-direction: column;
+  }
+  .header_1 .container .row .header-right .header-menu {
+    display: flex;
+    flex-direction: column;
+  }
+  .header_1 .container .row .header-right .header-menu .header-social {
+    margin-top: 50px;
+    margin-right: 45px;
+  }
+  .header_1 .container .row .header-right {
+    background-color: white;
+    flex-direction: column-reverse;
+    margin-left: 725px;
+    padding: 45px 30px;
+    display: none;
+  }
+  .header_1 .container .row .header-right nav {
+    margin-right: 25px;
+  }
+  .header-phone {
+    margin-top: 40px;
+  }
+  .sticky {
+    background-color: initial;
+  }
+  #toggle1 i {
+    font-size: 30px;
+  }
+  .member .container .row .tag .member-card {
+    margin-bottom: 40px;
+  }
+  #toggle1 {
+    width: auto;
+    display: block !important;
+    margin-left: 840px;
+  }
 }

@@ -11,6 +11,9 @@
         integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous" />
     <!-- Font google -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&family=Roboto:wght@300;400;500;700;900&display=swap"
@@ -35,8 +38,12 @@
                         <img src="./image/crest.png" alt="logo">
                     </a>
                 </div>
-                <div class="col-auto header-right">
-                    <nav>
+                <div id="toggle1">
+                    <i class="fa-solid fa-bars"></i>
+                  </div>
+                <div class="col-auto header-right navMenu">
+                  
+                    <nav >
                         <ul>
                             <li><a href="#">home</a></li>
                             <li><a href="#">about</a></li>
@@ -356,6 +363,14 @@
     <script>
         new WOW().init();
     </script>
+
+<script>
+    $(document).ready(function() {
+    $('#toggle1').click(function() {
+    $('.navMenu').slideToggle();
+  });
+  })
+  </script>
 
 </body>
 
